@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  max-width: 100%;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.section-title .title {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 11px;
+  background: linear-gradient(-96deg, #fd3d6b 0%, #fd7863 98%, #f3dfe0 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+@media only screen and (max-width: 767px) {
+  .section-title .title {
+    font-size: 30px;
+  }
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: #fb5d5d;
+}
